@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "Nome": "Notebook",
+        "preco": 3500,
+        "estoque": 3
+    },
+    {
+        "id": 2,
+        "Nome": "Iphone",
+        "preco": 2000,
+        "estoque": 2
+    },
+    {
+        "id": 3,
+        "Nome": "Tablet",
+        "preco": 3500,
+        "estoque": 2
+    }
+]

@@ -101,3 +101,31 @@ def att9():
         
 
 #att9()
+
+def att10():
+    nums = [3,7,10,15,20,30]
+    maiores = [n for n in nums if n > 10]
+    dobro = [n * 2 for n in nums]
+    quadradoOnlyPares = [ n ** 2 for n in nums if n % 2 ==0]
+    print(f"Números maiores que 10: {maiores}")
+    print(f"Dobro dos números: {dobro}")
+    print(f"Quadrado dos números pares: {quadradoOnlyPares}")
+att10()
+
+def att11():
+    nums = [3,7,10,15,20,30]
+    maiores = []
+    dobro = []
+    quadradoOnlyPares = []
+    for n in nums:
+        dobro.append(n * 2)
+        if n > 10:
+            maiores.append(n)
+        if n % 2 == 0:
+            quadradoOnlyPares.append(n ** 2)
+        
+    print(f"Números maiores que 10: {maiores}")
+    print(f"Dobro dos números: {dobro}")
+    print(f"Quadrado dos números pares: {quadradoOnlyPares}")
+    
+att11()

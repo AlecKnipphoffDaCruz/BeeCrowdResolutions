@@ -25,8 +25,6 @@ import java.util.Scanner;
 
 public class BEE1016 {
     public static void main(String[] args) {
-        int carX = 60;
-        int carY = 90;
         int kmMin = 2;
         String output = " minutos";
 
@@ -34,6 +32,6 @@ public class BEE1016 {
         int distance = sc.nextInt();
         int time = distance * kmMin;
         System.out.println(time + output);
-
+        sc.close();
     }
 }

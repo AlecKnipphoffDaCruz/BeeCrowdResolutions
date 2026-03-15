@@ -61,4 +61,41 @@ def att4():
     nums = [2,4,6,8]  
     nm = list(map(lambda x: x ** 2, nums))
     print(nm)
-att4()
+#att4()
+
+def att5():
+    with open("files/nomes.txt", "w") as f:
+        f.write("Ana\n")
+        f.write("Carlos\n")
+        f.write("Maria\n")
+#att5()
+
+def att6():
+    with open("files/nomes.txt", "r") as f:
+        for linha in f:
+            print(linha.strip())
+#att6()
+
+def att7():
+    cont = 0
+    with open("files/nomes.txt", "r") as f:
+        for linha in f:
+            cont += 1
+    print(f"Total de linhas no arquivo {f.name}: {cont}")    
+#att7()
+
+def att8():
+    with open("files/notas2.txt", "r") as f:
+        notas = [float(linha.strip()) for linha in f]
+        media = float(sum(notas) /len(notas))
+    print(f" Média: {media}")
+#att8()
+
+def att9():
+    with open("files/notas2.txt", "r") as f:
+        notas = [float(linha.strip()) * 2 for linha in f]
+    with open("files/notas_dobradas.txt", "w") as f:
+        for nota in notas:
+            f.write(f"{nota}\n")
+#att9()
+
